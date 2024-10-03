@@ -1,0 +1,253 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #bebebe;
+  }
+  
+  .sample-border{
+    border: 1px solid black;
+  }
+  .jumbotron {
+    background-color: #343a40;
+    color: #fff;
+  }
+  .card {
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+  }
+
+  .about-section{
+    padding: 50px 0;
+    background-color: #dde0e3;
+  }
+
+  .about-text h2{
+    color: #727778;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .about-text p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #53575c; /* Light text on dark backgrounds */
+  }
+  
+  .aboutme-pic {
+    max-width: 250px;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 35px;
+    transition: ease 0.5s;
+  }
+
+  .aboutme-pic:hover{
+    scale: 1.01;
+    box-shadow:  8px 8px 22px #a1a1a1,
+           -8px -8px 22px #acabab;
+  }
+  .aboutme {
+    color: #0f0f0f; /* Accent color for highlighted text */
+    font-weight: 700; /* Bold for emphasis */
+}
+  .hover-line {
+    position: relative;
+  }
+
+  .hover-line::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #f5efef;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+
+  .hover-line:hover::after {
+    width: 100%;
+  }
+
+
+#projects .card{
+  box-shadow:  8px 8px 30px #b4b4b4,
+           -8px -8px 30px #adacac;
+}
+#projects .card, .card-body{
+  border-radius: 15px !important;
+}
+
+#projects img{
+  border-radius: 15px !important;
+}
+
+
+
+
+/* section heading */
+.parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.section-heading {
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #555;
+  padding-bottom: 10px;
+}
+
+
+/* section heading --------------*/
+
+
+/* skills */
+#skills .skill-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 21px;
+  transition: ease 0.5s;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#skills .skill-btn:hover{
+  background-color: #989898;
+  border-radius: 5px;
+}
+
+.skills-content {
+  margin-top: 20px;
+  display: none; 
+}
+
+.skill-card {
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.badge {
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.beginner-card {
+  background-color: #5bc0de54;
+  color: #033341 !important;
+  
+}
+
+.intermediate-card {
+  background-color: #f0ac4e4c;
+  color: #3d2502 !important;
+}
+
+.advanced-card {
+  background-color: #5cb85c45;
+  color: #033d03;
+}
+
+.beginner {
+  background-color: #5bc0de;
+  color: white;
+}
+
+.intermediate {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+.advanced {
+  background-color: #5cb85c;
+  color: white;
+}
+
+
+/* skills  ------------*/
+
+
+
+
+/* contact */
+
+@media (max-width: 768px) {
+  
+
+.contact-info{
+  margin: 5px;
+  padding-top: 30px;
+}
+}
+
+#contact .contactme{
+    background-color: white;
+    box-shadow:  8px 8px 30px #b4b4b4,
+           -8px -8px 30px #adacac;
+    border-radius: 20px;
+}
+
+
+#contact .form-control{
+  background-color:#b3b3b39a;
+  border-radius: 20px;
+}
+
+.btn{
+  background-color: #343A40;
+  color: white;
+}
+
+.btn:hover{
+  color: rgb(251, 246, 246) !important;
+  background-color: #838181;
+
+}
+
+/* contact ----------- */
+
+
+/* fade in */
+.fade-in-bottom {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-bottom.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+/* back to top */
+#back-to-top{
+  background-color: rgb(30, 29, 29); 
+  color: white; 
+  padding: 15px; 
+  margin: 8px; 
+  border-radius: 7px; 
+  font-size: x-large; 
+  cursor: pointer;
+}

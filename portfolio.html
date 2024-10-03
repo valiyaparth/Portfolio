@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- BootStrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+      <a class="navbar-brand" href="portfolio.html">Parth Valiya</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link hover-line" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-line" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-line" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item"></li>
+            <a class="nav-link hover-line" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-line" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron text-center py-4">
+    <div class="container">
+      <h1>Welcome to My Portfolio</h1>
+      <h4>I'm <div class="typewrite" data-period="2000" data-type='[ "Parth Valiya.", "Computer Science Student.", "Web developer.", "Tech enthusiast." ]'>
+          <span class="wrap"></span>
+        </div>
+      </h4>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="container mt-5 about-section">
+    <div class="row align-items-center">
+      <div class="col-lg-6 about-text">
+        <h2 class="text-center">About Me</h2>
+        <p class="text-center">
+          I am <span class="aboutme">Parth Valiya.</span><br>
+          Third Year B.tech <span class="aboutme">Computer Engineering</span> Student.<br>
+          Studying in <span class="aboutme">Birla Vishwakrma Mahavidyalaya.</span>
+        </p>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="img/parth.jpg" class="img-fluid aboutme-pic" alt="Profile Picture">
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container mt-5 mb-5">
+    <div class="parent-container">
+      <h2 class="text-center mb-5 section-heading d-inline-block">Projects</h2>
+    </div>  
+    <div class="row">
+      <div class="col-lg-4 fade-in-bottom">
+        <div class="card">
+          <img src="https://via.placeholder.com/350" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Parth Creation</h5>
+            <p class="card-text">Description</p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 fade-in-bottom">
+        <div class="card">
+          <img src="https://via.placeholder.com/350" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Travel website</h5>
+            <p class="card-text">Description of project 2.</p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 fade-in-bottom">
+        <div class="card">
+          <img src="https://via.placeholder.com/350" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">.NET Project</h5>
+            <p class="card-text">This project is made using .NET and C#.</p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+   <section id="skills" class="container mt-5 mb-5">
+    <div class="parent-container">
+      <h2 class="text-center mb-5 section-heading d-inline-block">Skills</h2>
+    </div>  
+    <div class="row col-12 d-flex justify-content-center">
+      <div class="col-4 skill-btn" data-skill="languages">Language</div>
+      <div class="col-4 skill-btn" data-skill="frameworks">Framework</div>  
+      <div class="col-4 skill-btn" data-skill="tools">Tools</div>
+    </div>
+    <!-- Skills Content -->
+  <div class="row col-12 d-flex justify-content-center">
+
+    <!-- Languages Section -->
+    <div class="col-12 skills-content" id="languages">
+      <div class="row">
+        <div class="col-md-3 skill-card fade-in-bottom">
+          <div class="card beginner-card">
+            <h5 class="card-title">JavaScript</h5>
+            <p class="card-text"><span class="badge beginner">Beginner</span></p>
+          </div>
+        </div>
+        <div class="col-md-3 skill-card fade-in-bottom">
+          <div class="card intermediate-card">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text"><span class="badge intermediate">Intermediate</span></p>
+          </div>
+        </div>
+        <div class="col-md-3 skill-card fade-in-bottom">
+          <div class="card advanced-card">
+            <h5 class="card-title">C#</h5>
+            <p class="card-text"><span class="badge advanced">Advanced</span></p>
+          </div>
+        </div>
+        <div class="col-md-3 skill-card fade-in-bottom">
+          <div class="card intermediate-card">
+            <h5 class="card-title">Java</h5>
+            <p class="card-text"><span class="badge intermediate">Intermediate</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frameworks Section -->
+    <div class="col-12 skills-content" id="frameworks" style="display: none;">
+      <div class="row">
+        <div class="col-md-3 skill-card fade-in-bottom">
+          <div class="card intermediate-card">
+            <h5 class="card-title">React</h5>
+            <p class="card-text"><span class="badge intermediate">Intermediate</span></p>
+          </div>
+        </div>
+        <div class="col-md-3 skill-card fade-in-bottom">
+          <div class="card beginner-card">
+            <h5 class="card-title">Angular</h5>
+            <p class="card-text"><span class="badge beginner">Beginner</span></p>
+          </div>
+        </div>
+        <div class="col-md-3 skill-card fade-in-bottom">
+          <div class="card advanced-card">
+            <h5 class="card-title">ASP.NET</h5>
+            <p class="card-text"><span class="badge advanced">Advanced</span></p>
+          </div>
+        </div>
+        <div class="col-md-3 skill-card fade-in-bottom">
+          <div class="card intermediate-card">
+            <h5 class="card-title">Spring Boot</h5>
+            <p class="card-text"><span class="badge intermediate">Intermediate</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tools Section -->
+    <div class="col-12 skills-content" id="tools" style="display: none;">
+      <div class="row">
+        <div class="col-md-3 skill-card fade-in-bottom">
+          <div class="card intermediate-card">
+            <h5 class="card-title">Git</h5>
+            <p class="card-text"><span class="badge intermediate">Intermediate</span></p>
+          </div>
+        </div>
+        <div class="col-md-3 skill-card fade-in-bottom">
+          <div class="card beginner-card">
+            <h5 class="card-title">Docker</h5>
+            <p class="card-text"><span class="badge beginner">Beginner</span></p>
+          </div>
+        </div>
+        <div class="col-md-3 skill-card fade-in-bottom">
+          <div class="card advanced-card">
+            <h5 class="card-title">VS Code</h5>
+            <p class="card-text"><span class="badge advanced">Advanced</span></p>
+          </div>
+        </div>
+        <div class="col-md-3 skill-card fade-in-bottom">
+          <div class="card intermediate-card">
+            <h5 class="card-title">Postman</h5>
+            <p class="card-text"><span class="badge intermediate">Intermediate</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   </section>
+
+
+
+  <!-- Contact Section -->
+  <div class="parent-container">
+    <h2 class="text-center mb-5 section-heading d-inline-block">Contact Me</h2>
+  </div>
+
+  <section id="contact" class="container mb-5 mt-3 d-flex align-items-center justify-content-center">
+    <div class="row d-flex align-items-center justify-content-around col-lg-8 contactme">
+      <div class="col-lg-4 col-12 contact-info">
+        <span><i class="fa-solid fa-envelope fa-xl" style="color: #b7b7b8;"></i> &nbsp; valiyaparth1407@gmail.com</span><br><br>
+        <span><i class="fa-solid fa-phone fa-xl" style="color: #b7b7b8;"></i> &nbsp; +91 9265232388</span><br><br>
+        <span><i class="fa-solid fa-location-dot fa-xl" style="color: #b7b7b8;"></i> &nbsp; Surat, Gujrat, IN</span>
+      </div>
+      <form action="index.php" method="post" autocomplete="off" class="col-lg-4 col-11 m-3 p-1">
+        <h2 class="text-center mb-4"><b> Get in touch</b></h2>
+        <div class="mb-3">
+            <!-- <label class="form-label">Name</label> -->
+            <input type="text" class="form-control" name="username" placeholder="Name">
+        </div>
+        <div class="mb-3">
+            <!-- <label for="exampleInputPassword1" class="form-label" autocomplete="new-password">Email</label> -->
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email">
+        </div>
+        <div class="mb-3">
+          <!-- <label for="exampleInputPassword1" class="form-label" autocomplete="new-password">Message</label> -->
+          <textarea name="message" class="form-control" rows="3" placeholder="Please Enter Your Message"></textarea>
+      </div>
+        <button type="submit" class="btn" style="border-radius: 20px;">Submit</button>
+    </form>
+    </div>
+  </section>
+
+  <!-- Back to top -->
+  <div class="col"  style="text-align: right;">
+    <i id="back-to-top" class="fa-solid fa-arrow-up"></i>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 pt-4">
+    <div class="row">
+      <div class="col">&copy; 2024 Parth Valiya</div> 
+      <div class="col">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="https://github.com/valiyaparth"><i class="fa-brands fa-github" style="color: #eaecf0;"></i></a></li> &nbsp;
+          <li class="list-inline-item"><a href="www.linkedin.com/in/parthvaliya"><i class="fa-brands fa-linkedin" style="color: #eaecf0;"></i></a></li> &nbsp;
+          <li class="list-inline-item"><a href="https://www.instagram.com/parth._valiya/"><i class="fa-brands fa-instagram" style="color: #eaecf0;"></i></a></li>
+          <!-- Add more social media icons as needed -->
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>
+  <script src="portfolio.js"></script>
+</body>
+</html>
