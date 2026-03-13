@@ -4,12 +4,32 @@
     <span class="logo-name">PV</span>
     <span class="logo-bracket">]</span>
   </a>
-  <ul class="nav-ul">
+
+  <!-- Hamburger toggle (mobile only) -->
+  <button
+    class="nav-toggle"
+    [class.open]="isMenuOpen"
+    (click)="toggleMenu()"
+    aria-label="Toggle navigation menu"
+  >
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <!-- Mobile overlay backdrop -->
+  @if (isMenuOpen) {
+    <div class="nav-overlay" (click)="closeMenu()"></div>
+  }
+
+  <!-- Navigation links -->
+  <ul class="nav-ul" [class.nav-open]="isMenuOpen">
     @for (section of navSections; track section.id) {
       <li>
         <a
           [href]="'#' + section.id"
           [class.nav-hire]="section.isHire"
+          (click)="closeMenu()"
         >
           {{ section.label }}
         </a>

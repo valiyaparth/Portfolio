@@ -2,9 +2,12 @@
   <div class="sec-inner">
     <app-section-header sectionNumber="04" titleHtml='Tech <span class="hl">Stack</span>' />
     <div class="skills-grid reveal">
-      @for (category of skillCategories; track category.title) {
-        <div class="sk-col">
-          <div class="sk-col-head">{{ category.title }}</div>
+      @for (category of skillCategories; track category.title; let idx = $index) {
+        <div class="sk-col" [class.sk-col-open]="isCategoryExpanded(idx)">
+          <div class="sk-col-head" (click)="toggleCategory(idx)">
+            <span>{{ category.title }}</span>
+            <span class="sk-arrow">▼</span>
+          </div>
           <div class="sk-items">
             @for (item of category.items; track item) {
               <span class="sk-item">{{ item }}</span>

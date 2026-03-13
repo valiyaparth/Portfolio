@@ -43,7 +43,7 @@ export const PROJECTS: Project[] = [
     title: 'Appointment Management System',
     description:
       'End-to-end hospital scheduling platform for doctors and patients. Real-time booking, JWT-secured APIs, and a PostgreSQL-backed data model that cut patient wait times dramatically.',
-    imageUrl: 'https://parthvaliya.vercel.app/assets/images/TaskSphere(1).jpg',
+    imageUrl: 'assets/ams.jpg',
     fallbackImageUrl:
       'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=700&q=80',
     stack: ['.NET Core', 'EF Core', 'PostgreSQL', 'ReactJS', 'JWT', 'ASP.NET Identity'],
@@ -61,7 +61,7 @@ export const PROJECTS: Project[] = [
     title: 'BookVerse',
     description:
       'Online bookstore built with .NET Core MVC using Onion Architecture, Repository Pattern, and DI. Full auth, product listing, and checkout.',
-    imageUrl: 'https://parthvaliya.vercel.app/assets/images/bookverse.jpg',
+    imageUrl: 'assets/bookverse.jpg',
     fallbackImageUrl:
       'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80',
     stack: ['.NET MVC', 'Identity', 'SQL Server', 'Bootstrap'],
