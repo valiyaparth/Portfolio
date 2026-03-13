@@ -1,0 +1,31 @@
+<section id="hero">
+  <div class="hero-main">
+    <div>
+      <div class="avail"><span class="dot"></span>Available for freelance</div>
+      <h1 class="hero-h1">
+        @for (line of heroLines; track line.text) {
+          <span class="hline" [class.stroke]="line.isStroke">{{ line.text }}</span>
+        }
+      </h1>
+    </div>
+    <div class="hero-bottom">
+      <p class="hero-desc">
+        <em>.NET Core</em> backend developer at <em>Meditab</em>.<br />
+        Building APIs that don't break at 2AM.<br />
+        Available <em>20–25 hrs/week</em> for remote work.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-blk">View Work →</a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-side">
+    @for (stat of heroStats; track stat.label) {
+      <div class="hstat">
+        <div class="hstat-n">{{ stat.value }}</div>
+        <div class="hstat-l">{{ stat.label }}</div>
+      </div>
+    }
+  </div>
+</section>

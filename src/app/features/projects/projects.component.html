@@ -1,0 +1,43 @@
+<section id="projects">
+  <div class="sec-inner">
+    <app-section-header sectionNumber="02" titleHtml='Project <span class="hl">Gallery</span>' />
+    <div class="proj-grid reveal">
+      @for (project of projects; track project.id) {
+        <div class="proj-card" [class.wide]="project.isFeatured">
+          <div class="proj-img-wrap">
+            <img
+              [src]="project.imageUrl"
+              [alt]="project.title"
+              [appImgFallback]="project.fallbackImageUrl"
+            />
+          </div>
+          <div class="proj-body">
+            <div class="proj-num">
+              Project {{ project.id | number: '2.0-0' }}{{ project.isFeatured ? ' — Featured' : '' }}
+            </div>
+            <div class="proj-title">{{ project.title }}</div>
+            <div class="proj-desc">{{ project.description }}</div>
+            <div class="proj-stack">
+              @for (tech of project.stack; track tech) {
+                <span class="stk">{{ tech }}</span>
+              }
+            </div>
+            <div class="proj-links">
+              @for (link of project.links; track link.url) {
+                <a
+                  [href]="link.url"
+                  target="_blank"
+                  class="proj-link"
+                  [class.gh]="link.type === 'github'"
+                  [class.live]="link.type === 'live'"
+                >
+                  {{ link.label }}
+                </a>
+              }
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

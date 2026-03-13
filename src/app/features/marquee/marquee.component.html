@@ -1,0 +1,12 @@
+<div class="mq">
+  <div class="mq-t">
+    <!-- Original set -->
+    @for (item of marqueeItems; track item) {
+      <span class="mq-item"><span class="star">★</span> {{ item }}</span>
+    }
+    <!-- Duplicate for seamless infinite loop -->
+    @for (item of marqueeItems; track item; let idx = $index) {
+      <span class="mq-item"><span class="star">★</span> {{ item }}</span>
+    }
+  </div>
+</div>

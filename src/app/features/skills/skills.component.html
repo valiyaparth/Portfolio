@@ -1,0 +1,17 @@
+<section id="skills">
+  <div class="sec-inner">
+    <app-section-header sectionNumber="04" titleHtml='Tech <span class="hl">Stack</span>' />
+    <div class="skills-grid reveal">
+      @for (category of skillCategories; track category.title) {
+        <div class="sk-col">
+          <div class="sk-col-head">{{ category.title }}</div>
+          <div class="sk-items">
+            @for (item of category.items; track item) {
+              <span class="sk-item">{{ item }}</span>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

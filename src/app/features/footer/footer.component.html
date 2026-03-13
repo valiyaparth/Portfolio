@@ -1,0 +1,9 @@
+<footer>
+  <div class="foot-logo">PARTH <span>VALIYA</span> — BACKEND DEV</div>
+  <div class="foot-links">
+    @for (link of footerLinks; track link.label) {
+      <a [href]="link.url" target="_blank">{{ link.label }}</a>
+    }
+  </div>
+  <div class="foot-copy">© 2026 — BUILT WITH CHAI ☕</div>
+</footer>

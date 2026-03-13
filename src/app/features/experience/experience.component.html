@@ -1,0 +1,29 @@
+<section id="experience">
+  <div class="sec-inner">
+    <app-section-header sectionNumber="03" titleHtml='Work <span class="hl">History</span>' />
+    <div class="exp-table reveal">
+      @for (exp of experiences; track exp.company) {
+        <div class="exp-row">
+          <div class="exp-left">
+            <div class="exp-date">{{ exp.dateRange }}</div>
+            <div class="exp-co">{{ exp.company }}</div>
+            <div class="exp-loc">{{ exp.location }}</div>
+          </div>
+          <div class="exp-right">
+            <div class="exp-role">{{ exp.role }}</div>
+            <ul class="exp-pts">
+              @for (point of exp.points; track point) {
+                <li>{{ point }}</li>
+              }
+            </ul>
+            <div class="exp-tags-row">
+              @for (tag of exp.tags; track tag) {
+                <span class="etag">{{ tag }}</span>
+              }
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

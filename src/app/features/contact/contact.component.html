@@ -1,0 +1,77 @@
+<section id="contact">
+  <div class="sec-inner">
+    <app-section-header sectionNumber="05" [titleHtml]="sectionTitle" />
+    <div class="contact-grid reveal">
+      <div class="contact-info">
+        <h3>Got a project? <em>Let's talk.</em></h3>
+        <p>
+          Available for remote freelance — 20–25 hours/week. Backend APIs, full-stack apps,
+          WordPress, PHP, or anything in between. I start fast.
+        </p>
+        @for (info of contactInfoItems; track info.label) {
+          <div class="cinfo-item">
+            <div class="ci-icon">{{ info.icon }}</div>
+            <div>
+              <div class="ci-label">{{ info.label }}</div>
+              <div class="ci-val">{{ info.value }}</div>
+            </div>
+          </div>
+        }
+        <div class="social-row">
+          @for (social of socialLinks; track social.title) {
+            <a [href]="social.url" target="_blank" class="soc-btn" [title]="social.title">
+              @if (social.svgPath) {
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path [attr.d]="social.svgPath" />
+                </svg>
+              } @else {
+                {{ social.icon }}
+              }
+            </a>
+          }
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <div class="form-title">Send a Message</div>
+        <div class="fg-row">
+          <div class="fg">
+            <label>Name</label>
+            <input type="text" [(ngModel)]="formData.name" placeholder="Your name" />
+          </div>
+          <div class="fg">
+            <label>Email</label>
+            <input type="email" [(ngModel)]="formData.email" placeholder="you@email.com" />
+          </div>
+        </div>
+        <div class="fg">
+          <label>Subject</label>
+          <input
+            type="text"
+            [(ngModel)]="formData.subject"
+            placeholder="Project brief / opportunity"
+          />
+        </div>
+        <div class="fg">
+          <label>Message</label>
+          <textarea
+            [(ngModel)]="formData.message"
+            placeholder="Tell me about your project, timeline, and budget..."
+          ></textarea>
+        </div>
+        <button
+          class="btn-send"
+          [disabled]="isSending"
+          (click)="onSendMessage()"
+        >
+          {{ isSending ? 'Sending...' : 'Send Message →' }}
+        </button>
+        @if (formMessage) {
+          <div class="form-msg" [class.ok]="formSuccess" [class.err]="!formSuccess">
+            {{ formMessage }}
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

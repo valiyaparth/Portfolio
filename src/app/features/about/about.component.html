@@ -1,0 +1,41 @@
+<section id="about">
+  <div class="sec-inner">
+    <app-section-header sectionNumber="01" titleHtml='About <span class="hl">Me</span>' />
+    <div class="about-grid reveal">
+      <div class="about-img-cell">
+        <img
+          src="assets/parth.jpeg"
+          alt="Parth Valiya"
+          appImgFallback=""
+          (error)="onImageError($event)"
+        />
+        <div class="about-img-overlay">📍 Ahmedabad, Gujarat, India · UTC+5:30</div>
+      </div>
+      <div class="about-text-cell">
+        <p>
+          I'm a <strong>Backend Developer at Meditab</strong>, building .NET Core APIs and
+          PostgreSQL-backed systems that power real healthcare workflows.
+        </p>
+        <p>
+          I finished my <strong>Computer Engineering degree</strong> and jumped straight into
+          production-grade code. I care deeply about <strong>clean architecture</strong>, sensible
+          API design, and database performance.
+        </p>
+        <p>
+          Currently deepening skills in <strong>Docker, Azure, and Microservices</strong>. When I'm
+          not at the terminal, I'm obsessing over
+          <strong>cars, books, and a good cup of chai</strong>.
+        </p>
+        <p>
+          Open to <strong>remote freelance contracts</strong> — I bring the same production
+          discipline to every project, big or small.
+        </p>
+        <div class="about-chips">
+          @for (chip of aboutChips; track chip) {
+            <span class="chip">{{ chip }}</span>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
